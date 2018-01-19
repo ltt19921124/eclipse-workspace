@@ -1,0 +1,10 @@
+package JavaTest_1;
+
+public class VarDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
