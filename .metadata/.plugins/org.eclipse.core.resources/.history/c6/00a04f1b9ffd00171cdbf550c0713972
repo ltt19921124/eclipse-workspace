@@ -1,0 +1,32 @@
+package JavaTest_4;
+
+public class FuntionDemo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		draw(3, 4);
+		
+	}
+	
+	public static int add(int a,int b)
+	{
+		int sum = a+b;
+		return sum;
+	}
+	
+	public static void draw(int row,int col)
+	{
+		for (int x=1; x<=row ;x++ )
+		{
+			for (int y=1;y<=col ; y++ )
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+//		return ;//可以省略不写。
+	}
+	
+	
+}

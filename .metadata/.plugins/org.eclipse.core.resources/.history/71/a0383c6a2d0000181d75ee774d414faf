@@ -1,0 +1,21 @@
+package JavaTest_10;
+
+interface USB// 暴露的规则。
+{
+	public void open();
+	public void close();
+}
+
+
+
+public class BookPC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		useUSB(new UPan());//功能扩展了。
+		useUSB(new UsbMouse());
+		
+	}
+
+}

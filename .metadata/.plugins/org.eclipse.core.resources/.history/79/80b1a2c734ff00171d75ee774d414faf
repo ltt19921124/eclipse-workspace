@@ -1,0 +1,21 @@
+package JavaTest_6;
+
+class Person3 {
+	String name;//成员变量，实例变量
+	static String country = "CN";//静态变量。类变量 
+	public  void show()
+	{
+		System.out.println(Person3.country+":"+this.name);
+	}
+}
+
+public class StaticDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}

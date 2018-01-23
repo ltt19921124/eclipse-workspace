@@ -1,0 +1,12 @@
+package JavaTest_7;
+
+public class ArrayToolDemo {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {4,8,2,9,72,6};
+		
+		
+	}
+
+}

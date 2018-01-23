@@ -1,0 +1,41 @@
+package JavaTest_7;
+
+class Person2
+{
+	String name;
+	int age;
+}
+
+class Student extends/*继承*/ Person2
+{
+//	String name;
+//	int age;
+	void study()
+	{
+		System.out.println(name+"...student study.."+age);
+	}
+}
+
+class Worker extends Person2
+{
+//	String name;
+//	int age;
+	void work()
+	{
+		System.out.println("worker work");
+	}
+}
+
+public class ExtendsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student s = new Student();
+		s.name= "zhangsan";
+		s.age = 22;
+		s.study();
+	}
+		
+}
+

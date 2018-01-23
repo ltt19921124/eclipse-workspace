@@ -1,0 +1,22 @@
+package JavaTest_7;
+
+class Demo1
+{
+	static Demo d = new Demo();
+
+	Demo()
+	{
+		
+	}
+}
+
+public class DemoDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		new Demo();
+		
+	}
+
+}

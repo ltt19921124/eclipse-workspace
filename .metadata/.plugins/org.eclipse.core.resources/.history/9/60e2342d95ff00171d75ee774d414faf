@@ -1,0 +1,34 @@
+package JavaTest_7;
+
+class Fu1
+{
+	public static  void show()
+	{
+		System.out.println("fu show run");
+	}
+}
+
+class  Zi1 extends Fu1
+{
+	public static void show()
+	{
+		System.out.println("Zi show run");
+	}
+}
+
+
+
+public class ExtendsDemo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Zi z = new Zi();
+//		z.show();
+		NewPhone p = new NewPhone();
+		p.show();
+		p.call();
+		
+	}
+
+}

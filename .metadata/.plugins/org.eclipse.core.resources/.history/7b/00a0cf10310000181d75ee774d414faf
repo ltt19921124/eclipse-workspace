@@ -1,0 +1,27 @@
+package JavaTest_10;
+
+class 动物
+{}
+
+class 猫 extends 动物
+{}
+
+class 狗 extends 动物
+{}
+
+abstract class Animal
+{
+	abstract void eat();
+
+}
+
+
+
+public class DuotaiDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

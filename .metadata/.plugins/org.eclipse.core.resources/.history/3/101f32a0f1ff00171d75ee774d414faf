@@ -1,0 +1,47 @@
+package JavaTest_9;
+
+abstract class Demo
+{
+	void show1()
+	{}
+	
+
+	void show2()
+	{}
+}
+
+
+*/
+
+abstract class Demo
+{
+	abstract /*抽象*/ void show();
+	
+}
+
+/*
+
+class DemoA extends Demo
+{
+	void show()
+	{
+		System.out.println("demoa show");
+	}
+}
+class DemoB extends Demo
+{
+	void show()
+	{
+		System.out.println("demob show");
+	}
+}
+*/
+
+public class AbsratctDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

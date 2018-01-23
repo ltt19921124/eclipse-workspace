@@ -1,0 +1,22 @@
+package JavaTest_6;
+
+
+class Car {
+	int num;
+	String color;
+	
+	void run() {
+		System.out.println(num + "..." + color);
+	}
+}
+
+public class CarDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+
+}

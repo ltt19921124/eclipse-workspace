@@ -1,0 +1,21 @@
+package JavaTest_7;
+
+class Fu
+{
+	public static  void show()
+	{
+		System.out.println("fu show run");
+	}
+}
+
+
+public class ExtendsDemo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package JavaTest_7;
+
+class Fu
+{
+	 int num = 4;
+
+	public int getNum()
+	{
+		return num;
+	}
+}
+
+class Zi extends Fu
+{
+	private int num = 5;
+
+
+	void show()
+	{
+		System.out.println(super.num+"....."+super.getNum());
+	}
+}
+
+
+
+public class ExtendsDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Zi z = new Zi();
+		z.show();
+		
+	}
+
+}
