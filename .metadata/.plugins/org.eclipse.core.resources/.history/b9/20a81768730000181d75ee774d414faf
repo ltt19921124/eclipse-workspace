@@ -1,0 +1,24 @@
+package JavaTest_11;
+
+class Demo
+{
+	public int show(int index)throws ArrayIndexOutOfBoundsException
+	{
+
+		if(index<0)
+			throw new ArrayIndexOutOfBoundsException("越界啦！！");
+		int[] arr = new int[3];
+		return arr[index];
+	}
+}
+
+public class ExceptionDemo5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+	}
+
+}

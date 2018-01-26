@@ -63,11 +63,40 @@ public class DuotaiDemo {
 		//如果还想用具体动物猫的特有功能。 
 		//你可以将该对象进行向下转型。
 		
-		Animal a = new Cat(); 
-		a.eat();
-		Cat c = (Cat)a;
-		c.catchMouse();
+//		Animal a = new Cat(); 
+//		a.eat();
+//		Cat c = (Cat)a;
+//		c.catchMouse();
 		
+		Cat c = new Cat();
+		Dog d = new Dog();
+		
+		method(c);
+		method(d);
+		method(new Pig());
+		
+	}
+	
+	public static void method(Animal a)//Animal a = new Dog();
+	{
+		a.eat();
+
+		if(a instanceof Cat)//instanceof：用于判断对象的具体类型。只能用于引用数据类型判断
+//						//通常在向下转型前用于健壮性的判断。
+
+		{
+			Cat c = (Cat)a;
+			c.catchMouse();
+		}
+		else if(a instanceof Dog)
+		{
+			Dog d = (Dog)a;
+			d.lookHome();
+		}
+		else
+		{
+		
+		}
 		
 	}
 

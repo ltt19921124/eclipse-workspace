@@ -1,0 +1,40 @@
+package JavaTest_12;
+
+class Demo1 extends Thread
+{
+	private String name;
+	Demo1(String name)
+	{
+//		super(name);
+		this.name = name;
+	}
+	public void run()
+	{
+		int[] arr = new int[3];
+		System.out.println(arr[3]);
+		for(int x=0; x<10; x++)
+		{
+			System.out.println("....x="+x+".....name="+Thread.currentThread().getName());
+		}
+	}
+}
+
+public class ThreadDemo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Demo d1 = new Demo("旺财");
+		Demo d2 = new Demo("xiaoqiang");
+		
+		d1.start();
+		d2.start();
+		
+	}
+
+}
+
+
+
+
+
