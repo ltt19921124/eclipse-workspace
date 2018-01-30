@@ -1,7 +1,7 @@
-package p5.comparator;
+package p2.bean;
 
 import java.util.Comparator;
-import p.bean.Person;
+import p2.bean.Person;
 
 public class ComparatorByName implements Comparator{
 

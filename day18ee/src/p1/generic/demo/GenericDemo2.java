@@ -2,7 +2,7 @@ package p1.generic.demo;
 
 import java.util.Iterator;
 import java.util.TreeSet;
-import p.bean.Person;
+import p2.bean.*;
 
 public class GenericDemo2 {
 
@@ -16,6 +16,16 @@ public class GenericDemo2 {
 		ts.add(new Person("lisi",21));
 		ts.add(new Person("lis0",20));
 		
+		Iterator<Person> it = ts.iterator();
+		
+		while(it.hasNext()){
+			Person p = it.next();
+			System.out.println(p.getName()+":"+p.getAge());
+		}
+		
 	}
 
 }
+
+
+
