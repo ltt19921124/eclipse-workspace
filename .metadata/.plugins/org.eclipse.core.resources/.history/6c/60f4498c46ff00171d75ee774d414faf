@@ -1,9 +1,0 @@
-package JavaTest_7;
-
-
-
-public class StaticDemo3 {
-	public static void main(String[] args) {
-		
-	}
-}
