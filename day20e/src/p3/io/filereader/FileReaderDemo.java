@@ -19,8 +19,13 @@ public class FileReaderDemo {
 		
 		int ch = 0;
 		
-		while((ch=fr.read())!=-1){
-			System.out.println((char)ch);
+//		while((ch=fr.read())!=-1){
+//			System.out.println((char)ch);
+//		}
+		
+//		System.out.println((ch = fr.read()));
+		while ((ch = fr.read()) != -1) {
+			System.out.print((char)ch);
 		}
 		
 		fr.close();

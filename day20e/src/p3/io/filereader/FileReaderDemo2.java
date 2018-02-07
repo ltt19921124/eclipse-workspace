@@ -15,15 +15,20 @@ public class FileReaderDemo2 {
 		 *  
 		 * 先创建字符数组。
 		 */
-		char[] buf = new char[1024];
+		char[] buf = new char[3];
 		
 		int len = 0;
 		
 		while((len=fr.read(buf))!=-1){
-			System.out.println(new String(buf,0,len));
+			System.out.println(len + new String(buf,0,len));
 		}
 		
-
+//		int num = fr.read(buf);
+//		System.out.println(num + new String(buf));
+//		
+//		int num1 = fr.read(buf);
+//		System.out.println(num + new String(buf));
+		
 		fr.close();
 		
 	}

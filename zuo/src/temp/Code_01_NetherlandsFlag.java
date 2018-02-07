@@ -55,7 +55,7 @@ public class Code_01_NetherlandsFlag {
 //		System.out.println(res[0]);
 //		System.out.println(res[1]);
 		
-		int[] arr = {1,6,8,10,21,10,10,45};
+		int[] arr = {4,3,1,6,8,10,21,10,10,45};
 		printArray(arr);
 		
 		int[] res = partition(arr, 0, arr.length - 1, 10);

@@ -19,7 +19,7 @@ public class Code_02_MaxABSBetweenLeftAndRight {
 		}
 		return res;
 	}
-
+	//
 	public static int maxABS2(int[] arr) {
 		int[] lArr = new int[arr.length];
 		int[] rArr = new int[arr.length];
@@ -55,10 +55,20 @@ public class Code_02_MaxABSBetweenLeftAndRight {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = generateRandomArray(200);
-		
-		System.out.println(maxABS1(arr));
-		System.out.println(maxABS2(arr));
+//		int[] arr = generateRandomArray(200);
+		int[] arr = {3,4,5,1,2};
+//		
+//		System.out.println(maxABS1(arr));
+//		System.out.println(maxABS2(arr));
 		System.out.println(maxABS3(arr));
+		
+//		System.out.println(Math.max(78, 90));
+		
+		
 	}
 }
+
+
+
+
+
