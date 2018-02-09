@@ -14,7 +14,7 @@ package JavaTest_13;
 class Ticket1 implements Runnable
 {
 	private  int num = 100;
-//	Object obj = new Object();
+	Object obj = new Object();
 	boolean flag = true;
 	public void run()
 	{
@@ -66,3 +66,8 @@ public class SynFunctionLockDemo {
 	}
 
 }
+
+
+
+
+

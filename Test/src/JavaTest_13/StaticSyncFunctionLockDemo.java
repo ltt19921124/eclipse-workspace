@@ -12,7 +12,7 @@ class Ticket2 implements Runnable
 		if(flag)
 			while(true)
 			{
-				synchronized(Ticket.class)//(this.getClass())
+				synchronized(Ticket2.class)//(this.getClass())
 				{
 					if(num>0)
 					{
