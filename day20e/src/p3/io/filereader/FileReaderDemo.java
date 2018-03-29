@@ -24,6 +24,15 @@ public class FileReaderDemo {
 //		}
 		
 //		System.out.println((ch = fr.read()));
+		
+		//用Reader中的read方法读取字符。
+		/*ch = fr.read();
+		System.out.println(ch);
+		int ch1 = fr.read();
+		System.out.println(ch1);
+		int ch2 = fr.read();
+		System.out.println(ch2);*/
+		
 		while ((ch = fr.read()) != -1) {
 			System.out.print((char)ch);
 		}

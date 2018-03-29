@@ -16,19 +16,19 @@ public class Code_04_PaperFolding {
 	}
 	
 	//
-	public static int fiboNaci(int num) {
+	public static int fiboNacci(int num) {
 		if (num == 1 || num == 2) {
 			return 1;
 		} else {
-			return fiboNaci(num - 1) + fiboNaci(num - 2);
+			return fiboNacci(num - 1) + fiboNacci(num - 2);
 		}
 	}
 	
-	public static int fiboNaciSum (int n) {
+	public static int fiboNacciSum (int n) {
 		int sum = 0;
 		
 		for (int i = 1;i <= n;i++) {
-			sum += fiboNaci(i);
+			sum += fiboNacci(i);
 		}
 		
 		return sum;
@@ -37,11 +37,11 @@ public class Code_04_PaperFolding {
 	
 	public static void main(String[] args) {
 		int N = 4;
-		printAllFolds(N);
+//		printAllFolds(N);
 		
-//		fiboNaci(6);
-//		System.out.println(fiboNaci(6));
-//		System.out.println(fiboNaciSum(6));
+		fiboNacci(6);
+		System.out.println(fiboNacci(6));
+		System.out.println(fiboNacciSum(6));
 		
 	}
 }

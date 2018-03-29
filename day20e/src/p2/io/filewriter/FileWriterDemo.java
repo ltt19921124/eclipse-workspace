@@ -27,8 +27,8 @@ public class FileWriterDemo {
 		 * 其实数据写入到临时存储缓冲区中。
 		 * 
 		 */
-		fw.write("abcde"+LINE_SEPARATOR+"hahaha");
-//		fw.write("xixi");
+		fw.write("abcde" + LINE_SEPARATOR + "hahaha");
+		fw.write("xixi");
 		
 //		fw.flush();
 		

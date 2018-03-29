@@ -13,7 +13,7 @@ public class IOExceptionDemo {
 		FileWriter fw = null;
 		try {
 
-			fw = new FileWriter("demo_1.txt");
+			fw = new FileWriter("demo11.txt");
 
 			fw.write("abcde" + LINE_SEPARATOR + "hahaha");
 

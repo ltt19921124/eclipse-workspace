@@ -29,7 +29,7 @@ public class Code_01_NetherlandsFlag {
 	public static int[] generateArray() {
 		int[] arr = new int[10];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) (Math.random() * 3);
+			arr[i] = (int) (Math.random() * 10);
 		}
 		return arr;
 	}
@@ -47,20 +47,22 @@ public class Code_01_NetherlandsFlag {
 	
 	public static void main(String[] args) {
 //		int[] test = generateArray();
-//
-//		printArray(test);
-//		int[] res = partition(test, 0, test.length - 1, 1);
-//		printArray(test);
-//		printArray(res);
+		
+		int[] test = {1,3,4,5,6,3,5,7,5,5,23,45,8,9};
+
+		printArray(test);
+		int[] res = partition(test, 0, test.length - 1, 5);
+		printArray(test);
+		printArray(res);
 //		System.out.println(res[0]);
 //		System.out.println(res[1]);
 		
-		int[] arr = {4,3,1,6,8,10,21,10,10,45};
-		printArray(arr);
+//		int[] arr = {4,3,1,6,8,10,21,10,10,45};
+		/*printArray(arr);
 		
-		int[] res = partition(arr, 0, arr.length - 1, 10);
+		int[] res = partition(arr, 0, arr.length - 1, 45);
 		printArray(arr);
-		printArray(res);
+		printArray(res);*/
 		
 	}
 }
