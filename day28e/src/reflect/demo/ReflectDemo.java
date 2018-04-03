@@ -20,7 +20,7 @@ public class ReflectDemo {
 
 	public static void main(String[] args) throws ClassNotFoundException {
 		// TODO Auto-generated method stub
-		getClassObject_1();
+		getClassObject_3();
 		
 		
 	}

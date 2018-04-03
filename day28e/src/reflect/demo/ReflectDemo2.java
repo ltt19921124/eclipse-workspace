@@ -24,7 +24,7 @@ public class ReflectDemo2 {
 		 * 该方法是：getConstructor(paramterTypes);
 		 * 
 		 */
-		String name = "cn.itcast.bean.Person";
+		String name = "bean.person.Person";
 		//找寻该名称类文件，并加载进内存，并产生Class对象。
 		Class clazz = Class.forName(name);
 		//获取到了指定的构造函数对  象。

@@ -14,7 +14,7 @@ public class ReflectDemo4 {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		getMethodDemo_3();
+		getMethodDemo_2();
 		
 	}
 	
@@ -22,26 +22,24 @@ public class ReflectDemo4 {
 
 	public static void getMethodDemo_3() throws Exception {
 		
-		Class clazz = Class.forName("cn.itcast.bean.Person");
+		Class clazz = Class.forName("bean.person.Person");
 		
-		Method method = clazz.getMethod("paramMethod", String.class,int.class);
+		Method methods = clazz.getMethod("paramMethod", String.class,int.class);
 		
-		Object obj = clazz.newInstance();
-		
-		method.invoke(obj, "Сǿ",89);
 		
 		
 	}
-
+	//
 	public static void getMethodDemo_2() throws Exception {
 		
-		Class clazz = Class.forName("cn.itcast.bean.Person");
+		Class clazz = Class.forName("bean.person.Person");
 		
-		Method method = clazz.getMethod("show", null);//��ȡ�ղ���һ�㷽����
-		
+		Method method = clazz.getMethod("show", null);//
+//		Object obj = new Object();
+//		method.invoke(obj, null);
 //		Object obj = clazz.newInstance();
 		Constructor constructor = clazz.getConstructor(String.class,int.class);
-		Object obj = constructor.newInstance("С��",37);
+		Object obj = constructor.newInstance("xiaoming",37);
 		
 		
 		method.invoke(obj, null);
@@ -51,14 +49,14 @@ public class ReflectDemo4 {
 	}
 
 	/*
-	 * ��ȡָ��Class�е����й���������
+	 * 
 	 */
 	public static void getMethodDemo() throws Exception {
 		
 		Class clazz = Class.forName("cn.itcast.bean.Person");
 		
-		Method[] methods  = clazz.getMethods();//��ȡ�Ķ��ǹ��еķ����� 
-		methods = clazz.getDeclaredMethods();//ֻ��ȡ���������з���������˽�С� 
+		Method[] methods  = clazz.getMethods();//
+		methods = clazz.getDeclaredMethods();//
 		for(Method method : methods){
 			System.out.println(method);
 		}

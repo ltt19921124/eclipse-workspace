@@ -1,6 +1,8 @@
 package reflect.demo;
 
 import java.lang.reflect.Field;
+import java.util.HashMap;
+
 
 public class ReflectDemo3 {
 
@@ -8,6 +10,7 @@ public class ReflectDemo3 {
 		// TODO Auto-generated method stub
 		
 		getFieldDemo();
+		HashMap hs = new HashMap();
 		
 	}
 	
