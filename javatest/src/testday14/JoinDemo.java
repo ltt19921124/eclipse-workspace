@@ -1,7 +1,7 @@
 package testday14;
 class Demo implements Runnable
 {
-	public void run()
+	public synchronized void run()
 	{
 		for(int x=0; x<50; x++)
 		{
@@ -21,7 +21,7 @@ class  JoinDemo
 		Thread t2 = new Thread(d);
 
 		t1.start();
-
+		t1.join();
 
 		t2.start();
 //		t2.setPriority(Thread.MAX_PRIORITY);
