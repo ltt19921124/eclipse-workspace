@@ -46,6 +46,7 @@ public class Code_01_PreInPosTraversal {
 		if (head != null) {
 			Stack<Node> stack = new Stack<Node>();
 			stack.add(head);
+//			System.out.println(head);
 			while (!stack.isEmpty()) {
 				head = stack.pop();
 				System.out.print(head.value + " ");
@@ -59,6 +60,14 @@ public class Code_01_PreInPosTraversal {
 		}
 		System.out.println();
 	}
+	
+	/*public static void print() {
+		Stack<Integer> stack = new Stack<Integer>();
+		stack.add(3);
+		
+		System.out.println(stack.add(5));
+		System.out.println(stack);
+	}*/
 
 	public static void inOrderUnRecur(Node head) {
 		System.out.print("in-order: ");
@@ -123,17 +132,15 @@ public class Code_01_PreInPosTraversal {
 	}
 
 	public static void main(String[] args) {
-		Node head = new Node(5);
-		head.left = new Node(3);
-		head.right = new Node(8);
-		head.left.left = new Node(2);
-		head.left.right = new Node(4);
-		head.left.left.left = new Node(1);
-		head.right.left = new Node(7);
-		head.right.left.left = new Node(6);
-		head.right.right = new Node(10);
-		head.right.right.left = new Node(9);
-		head.right.right.right = new Node(11);
+		Node head = new Node(1);
+		head.left = new Node(2);
+		head.right = new Node(3);
+		head.left.left = new Node(4);
+		head.left.right = new Node(5);
+		head.right.left = new Node(6);
+		head.right.right = new Node(7);
+		
+//		print();
 
 		// recursive
 		System.out.println("==============recursive==============");

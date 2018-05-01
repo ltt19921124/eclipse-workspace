@@ -2,6 +2,7 @@ package reflect.demo;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import bean.person.Person;
 
 public class ReflectDemo4 {
 
@@ -15,6 +16,7 @@ public class ReflectDemo4 {
 	public static void main(String[] args) throws Exception {
 
 		getMethodDemo_2();
+//		getMethodDemo();
 		
 	}
 	
@@ -53,7 +55,7 @@ public class ReflectDemo4 {
 	 */
 	public static void getMethodDemo() throws Exception {
 		
-		Class clazz = Class.forName("cn.itcast.bean.Person");
+		Class clazz = Class.forName("bean.person.Person");
 		
 		Method[] methods  = clazz.getMethods();//
 		methods = clazz.getDeclaredMethods();//

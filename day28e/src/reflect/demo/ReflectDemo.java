@@ -1,5 +1,6 @@
 package reflect.demo;
-import bean.person.Person;;
+import bean.person.Person;
+
 
 /*
  * JAVA反射机制是在运行状态中，对于任意一个类 (class文件)，都能够知道这个类的所有属性和方法；
@@ -67,6 +68,7 @@ public class ReflectDemo {
 		Class clazz = p.getClass();
 		
 		Person p1 = new Person();
+		
 		Class clazz1 = p1.getClass();
 		
 		System.out.println(clazz==clazz1);
