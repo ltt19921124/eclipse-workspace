@@ -10,7 +10,7 @@ public class ReflectDemo3 {
 		// TODO Auto-generated method stub
 		
 		getFieldDemo();
-		HashMap hs = new HashMap();
+//		HashMap hs = new HashMap();
 		
 	}
 	

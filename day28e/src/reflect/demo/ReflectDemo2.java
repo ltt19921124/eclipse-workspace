@@ -8,8 +8,8 @@ public class ReflectDemo2 {
 		// TODO Auto-generated method stub
 		
 		
+//		createNewObject();
 		createNewObject_2();
-		
 	}
 	
 	public static void createNewObject_2() throws Exception {
