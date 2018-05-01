@@ -1,50 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home" version="1.8.0_151">
-<bootpath>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="/Users/lutian/Library/Java/Extensions"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext"/>
-<entry path="/Library/Java/Extensions"/>
-<entry path="/Network/Library/Java/Extensions"/>
-<entry path="/System/Library/Java/Extensions"/>
-<entry path="/usr/lib/java"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
-</endorsedDirs>
-</libraryInfo>
-<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home" version="1.8.0_162">
-<bootpath>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/resources.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jsse.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jce.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/charsets.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jfr.jar"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="/Users/lutian/Library/Java/Extensions"/>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/ext"/>
-<entry path="/Library/Java/Extensions"/>
-<entry path="/Network/Library/Java/Extensions"/>
-<entry path="/System/Library/Java/Extensions"/>
-<entry path="/usr/lib/java"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/endorsed"/>
-</endorsedDirs>
-</libraryInfo>
-<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home" version="10"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home" version="1.8.0_151">
+        <bootpath>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/Users/lutian/Library/Java/Extensions"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext"/>
+            <entry path="/Library/Java/Extensions"/>
+            <entry path="/Network/Library/Java/Extensions"/>
+            <entry path="/System/Library/Java/Extensions"/>
+            <entry path="/usr/lib/java"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="G:\jdk9.04" version="9.0.4"/>
+    <libraryInfo home="G:\jdk10" version="10"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home" version="1.8.0_162">
+        <bootpath>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/resources.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/sunrsasign.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jsse.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jce.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/charsets.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/jfr.jar"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/Users/lutian/Library/Java/Extensions"/>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/ext"/>
+            <entry path="/Library/Java/Extensions"/>
+            <entry path="/Network/Library/Java/Extensions"/>
+            <entry path="/System/Library/Java/Extensions"/>
+            <entry path="/usr/lib/java"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="G:\jdk_144" version="1.8.0_144">
+        <bootpath>
+            <entry path="G:\jdk_144\jre\lib\resources.jar"/>
+            <entry path="G:\jdk_144\jre\lib\rt.jar"/>
+            <entry path="G:\jdk_144\jre\lib\sunrsasign.jar"/>
+            <entry path="G:\jdk_144\jre\lib\jsse.jar"/>
+            <entry path="G:\jdk_144\jre\lib\jce.jar"/>
+            <entry path="G:\jdk_144\jre\lib\charsets.jar"/>
+            <entry path="G:\jdk_144\jre\lib\jfr.jar"/>
+            <entry path="G:\jdk_144\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="G:\jdk_144\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="G:\jdk_144\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="G:\jdk8u162" version="1.8.0_162">
+        <bootpath>
+            <entry path="G:\jdk8u162\jre\lib\resources.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\rt.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\sunrsasign.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\jsse.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\jce.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\charsets.jar"/>
+            <entry path="G:\jdk8u162\jre\lib\jfr.jar"/>
+            <entry path="G:\jdk8u162\jre\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="G:\jdk8u162\jre\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="G:\jdk8u162\jre\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home" version="10"/>
 </libraryInfos>

@@ -5,6 +5,13 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="J:\github\eclipse-workspace\day28e"/>
+			<item value="J:\github\eclipse-workspace\Test"/>
+			<item value="J:\github\eclipse-workspace\zuo"/>
+			<item value="J:\github\eclipse-workspace\NiuCoder"/>
+			<item value="J:\github\eclipse-workspace\NiuCoderLesson_1"/>
+			<item value="J:\github\eclipse-workspace\SourceCode"/>
+			<item value="J:\github\eclipse-workspace"/>
 			<item value="/Users/lutian/Downloads/程序员代码面试指南-代码/BookCode"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
