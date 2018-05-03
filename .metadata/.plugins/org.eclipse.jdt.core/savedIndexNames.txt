@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-INDEX VERSION 1.130+J:\github\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
-2989531287.index
-1657330681.index
-1437710536.index
-1146721582.index
-3999797275.index
-2950284601.index
-143846919.index
-484918842.index
-3355587615.index
-3736788708.index
-3954139492.index
-1359159574.index
-4067845971.index
-1940244626.index
-2751164255.index
-1992061946.index
-1027637850.index
-774991629.index
-28202185.index
-314661745.index
-37497704.index
-1004815982.index
-2666580629.index
-2118915764.index
-2660715743.index
-1818610234.index
-1841747694.index
-=======
 INDEX VERSION 1.130+/Users/lutian/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
 2473393510.index
 1271342938.index
@@ -66,4 +36,3 @@ INDEX VERSION 1.130+/Users/lutian/eclipse-workspace/.metadata/.plugins/org.eclip
 3703194086.index
 380788720.index
 2583781067.index
->>>>>>> 1907fd22691f9909e9c80d01300d0ae62a5187ce

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home" stamp="1504666706000"/>
-    <entry loc="G:\jdk9.04" stamp="1522749880189"/>
-    <entry loc="G:\jdk10" stamp="1522750256368"/>
-    <entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home" stamp="1513734911000"/>
-    <entry loc="G:\jdk_144" stamp="1502937667019"/>
-    <entry loc="G:\jdk8u162" stamp="1522773044108"/>
-    <entry loc="/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home" stamp="1520475406000"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home" stamp="1504666706000"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home" stamp="1513734911000"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home" stamp="1520475406000"/>
 </dirs>
