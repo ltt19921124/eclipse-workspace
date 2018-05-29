@@ -1,58 +1,54 @@
 package lesson4;
 
-import java.util.Arrays;
+public class Code_12_SmallSum {
 
-public class Code_00_BubbleSort {
-
-	public static void bubbleSort(int[] arr) {
+	public static int smallSum(int[] arr) {
 		if (arr == null || arr.length < 2) {
-			return;
+			return 0;
 		}
-		/*for (int e = arr.length - 1; e > 0; e--) {
-			for (int i = 0; i < e; i++) {
-				if (arr[i] > arr[i + 1]) {
-					swap(arr, i, i + 1);
-				}
-			}
-		}*/
-		for (int i = 0; i < arr.length - 1;i++) {
-			for (int j = 0;j < arr.length - 1 - i;j++) {
-				if (arr[j] > arr[j + 1]) {
-					swap(arr, j, j + 1);
-				}
-			}
-		}
+		return mergeSort(arr, 0, arr.length - 1);
 	}
-
-	public static void swap(int[] arr, int i, int j) {
-		arr[i] = arr[i] ^ arr[j];
-		arr[j] = arr[i] ^ arr[j];
-		arr[i] = arr[i] ^ arr[j];
-	}
-	
-	public static void bubbleSort_2(int[] arr) {
-		for (int i = 0; i < arr.length - 1; i++) {
-			for (int j = 0; j < arr.length -1 -i; j++) {
-				if (arr[j] > arr[j + 1]) {
-					swap(arr, j, j + 1);
-				}
-			}
+	public static int mergeSort(int[] arr, int l, int r) {
+		if (l == r) {
+			return 0;
 		}
+		int mid = l + ((r - l) >> 1);
+		return mergeSort(arr, l, mid) + mergeSort(arr, mid + 1, r) + merge(arr, l, mid, r);
 	}
-	
-	public static void select(int[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-			for (int j =i + 1; j < arr.length; j++) {
-				if (arr[i] > arr[j]) {
-					swap(arr, i, j);
-				}
-			}
+	public static int merge(int[] arr, int l, int m, int r) {
+		int[] help = new int[r - l + 1];
+		int i = 0;
+		int p1 = l;
+		int p2 = m + 1;
+		int res = 0;
+		while (p1 <= m && p2 <= r) {
+			res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
+			help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
 		}
+		while (p1 <= m) {
+			help[i++] = arr[p1++];
+		}
+		while (p2 <= r) {
+			help[i++] = arr[p2++];
+		}
+		for (i = 0; i < help.length; i++) {
+			arr[l + i] = help[i];
+		}
+		return res;
 	}
 
 	// for test
-	public static void comparator(int[] arr) {
-		Arrays.sort(arr);
+	public static int comparator(int[] arr) {
+		if (arr == null || arr.length < 2) {
+			return 0;
+		}
+		int res = 0;
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = 0; j < i; j++) {
+				res += arr[j] < arr[i] ? arr[j] : 0;
+			}
+		}
+		return res;
 	}
 
 	// for test
@@ -105,6 +101,19 @@ public class Code_00_BubbleSort {
 		}
 		System.out.println();
 	}
+	
+	//test smallSum
+	public static int getsmallSum(int[] arr) {
+		int sum = 0;
+		for (int i = 1; i < arr.length; i++) {
+			for (int j = 0; j < i; j++) {
+				if (arr[i] > arr[j]) {
+					sum += arr[j];
+				}
+			}
+		}
+		return sum;
+	}
 
 	// for test
 	public static void main(String[] args) {
@@ -115,23 +124,24 @@ public class Code_00_BubbleSort {
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			bubbleSort(arr1);
-			comparator(arr2);
-			if (!isEqual(arr1, arr2)) {
+			if (smallSum(arr1) != comparator(arr2)) {
 				succeed = false;
+				printArray(arr1);
+				printArray(arr2);
 				break;
 			}
 		}
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");*/
-
-//		int[] arr = generateRandomArray(maxSize, maxValue);
-		int [] arr = {3,2,1,6,8,9,7,4,5};
+		
+		int[] arr = {1,2,4,5,3,2,1,9,8};
+		System.out.println(getsmallSum(arr));
+		
 		printArray(arr);
-//		bubbleSort(arr);
-//		bubbleSort_2(arr);
-		select(arr);
+		
+		System.out.println(smallSum(arr));//正确代码//我写的代码
+		
 		printArray(arr);
+		
 	}
 
 }
-

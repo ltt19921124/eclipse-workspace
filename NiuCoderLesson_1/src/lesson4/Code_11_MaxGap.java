@@ -94,7 +94,7 @@ public class Code_11_MaxGap {
 		}
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");*/
 		int[] arr = {1,3,4,67,23,12,45,78,100};
-		int[] arr2 = {21,1,2,3,6,7,11};
+		int[] arr2 = {1,2,3,6,7,11,15,25};
 		System.out.println(maxGap(arr2));
 		
 		

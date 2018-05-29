@@ -1,43 +1,39 @@
-package lesson4;
+package lesson5;
 
 import java.util.Arrays;
 
-public class Code_03_HeapSort {
+public class Code_04_QuickSort {
 
-	public static void heapSort(int[] arr) {
+	public static void quickSort(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return;
 		}
-		for (int i = 0; i < arr.length; i++) {
-			heapInsert(arr, i);
-		}
-		int size = arr.length;
-		swap(arr, 0, --size);
-		while (size > 0) {
-			heapify(arr, 0, size);
-			swap(arr, 0, --size);
+		quickSort(arr, 0, arr.length - 1);
+	}
+
+	public static void quickSort(int[] arr, int l, int r) {
+		if (l < r) {
+			swap(arr, l + (int) (Math.random() * (r - l + 1)), r);
+			int[] p = partition(arr, l, r);
+			quickSort(arr, l, p[0] - 1);
+			quickSort(arr, p[1] + 1, r);
 		}
 	}
 
-	public static void heapInsert(int[] arr, int index) {
-		while (arr[index] > arr[(index - 1) / 2]) {
-			swap(arr, index, (index - 1) / 2);
-			index = (index - 1) / 2;
-		}
-	}
-
-	public static void heapify(int[] arr, int index, int size) {
-		int left = index * 2 + 1;
-		while (left < size) {
-			int largest = left + 1 < size && arr[left + 1] > arr[left] ? left + 1 : left;
-			largest = arr[largest] > arr[index] ? largest : index;
-			if (largest == index) {
-				break;
+	public static int[] partition(int[] arr, int l, int r) {
+		int less = l - 1;
+		int more = r;
+		while (l < more) {
+			if (arr[l] < arr[r]) {
+				swap(arr, ++less, l++);
+			} else if (arr[l] > arr[r]) {
+				swap(arr, --more, l);
+			} else {
+				l++;
 			}
-			swap(arr, largest, index);
-			index = largest;
-			left = index * 2 + 1;
 		}
+		swap(arr, more, r);//
+		return new int[] { less + 1, more };
 	}
 
 	public static void swap(int[] arr, int i, int j) {
@@ -104,32 +100,32 @@ public class Code_03_HeapSort {
 
 	// for test
 	public static void main(String[] args) {
-		/*int testTime = 50;
+		int testTime = 50;
 		int maxSize = 15;
-		int maxValue = 15;
+		int maxValue = 50;
 		boolean succeed = true;
 		for (int i = 0; i < testTime; i++) {
 			int[] arr1 = generateRandomArray(maxSize, maxValue);
 			int[] arr2 = copyArray(arr1);
-			heapSort(arr1);
+			quickSort(arr1);
 			comparator(arr2);
 			if (!isEqual(arr1, arr2)) {
 				succeed = false;
+				printArray(arr1);
+				printArray(arr2);
 				break;
 			}
 		}
-		System.out.println(succeed ? "Nice!" : "Fucking fucked!");*/
+		System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 
 //		int[] arr = generateRandomArray(maxSize, maxValue);
-		int[] arr = {2,3,5,6,1,9,6,12,34};
-		printArray(arr);
-		heapSort(arr);
-		printArray(arr);
+		int[] arr = {1,2,2,3,2,4,6,2,3,5,2,5,6,5};
+		partition(arr, 0, arr.length - 1);
 		
-		int i = 0;
-		int j = (i - 1) / 2;
-		System.out.println(j);
-	
+		printArray(arr);
+		quickSort(arr);
+		printArray(arr);
+
 	}
 
 }
