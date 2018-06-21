@@ -5,8 +5,8 @@ public class Ali {
 	public static void main(String[] args) {
 		
 		System.out.println(ways(5,5,3,6));
-		int[] arr = {1,1,3,2};
-		System.out.println(getIndex(arr,3));
+		int[] arr = {1,1,3,2,8};
+		System.out.println(getIndex(arr,8));
 		
 	}
 	
