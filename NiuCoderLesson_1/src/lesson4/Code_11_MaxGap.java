@@ -11,19 +11,23 @@ public class Code_11_MaxGap {
 		int len = nums.length;
 		int min = Integer.MAX_VALUE;
 		int max = Integer.MIN_VALUE;
+		//找到最小最大值
 		for (int i = 0; i < len; i++) {
 			min = Math.min(min, nums[i]);
 			max = Math.max(max, nums[i]);
 		}
+		//只有一种数返回0 
 		if (min == max) {
 			return 0;
 		}
+		//数组 n+1 ，为数加1，三个数组，描述每个桶
 		boolean[] hasNum = new boolean[len + 1];
 		int[] maxs = new int[len + 1];
 		int[] mins = new int[len + 1];
+		
 		int bid = 0;
 		for (int i = 0; i < len; i++) {
-			bid = bucket(nums[i], len, min, max);
+			bid = bucket(nums[i], len, min, max);//确定这个数属于哪个桶
 			mins[bid] = hasNum[bid] ? Math.min(mins[bid], nums[i]) : nums[i];
 			maxs[bid] = hasNum[bid] ? Math.max(maxs[bid], nums[i]) : nums[i];
 			hasNum[bid] = true;
@@ -93,8 +97,8 @@ public class Code_11_MaxGap {
 			}
 		}
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");*/
-		int[] arr = {1,3,4,67,23,12,45,78,100};
-		int[] arr2 = {1,2,3,6,7,11,15,25};
+//		int[] arr = {1,3,4,67,23,12,45,78,100};
+		int[] arr2 = {1,2,3,6,7,11,15,19};
 		System.out.println(maxGap(arr2));
 		
 		

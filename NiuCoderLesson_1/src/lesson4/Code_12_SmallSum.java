@@ -13,7 +13,9 @@ public class Code_12_SmallSum {
 			return 0;
 		}
 		int mid = l + ((r - l) >> 1);
-		return mergeSort(arr, l, mid) + mergeSort(arr, mid + 1, r) + merge(arr, l, mid, r);
+		return mergeSort(arr, l, mid) +
+				mergeSort(arr, mid + 1, r) + 
+				merge(arr, l, mid, r);
 	}
 	public static int merge(int[] arr, int l, int m, int r) {
 		int[] help = new int[r - l + 1];

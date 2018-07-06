@@ -9,7 +9,7 @@ public class Code_08_NetherlandsFlag {
 			if (arr[l] < p) {
 				swap(arr, ++less, l++);
 			} else if (arr[l] > p) {
-				swap(arr, --more, l);
+				swap(arr, --more, l);//注意，为什么是l，而不是l++
 			} else {
 				l++;
 			}
@@ -46,7 +46,7 @@ public class Code_08_NetherlandsFlag {
 
 	public static void main(String[] args) {
 //		int[] test = generateArray();
-		int[] test = {1,2,3,4,5,5,6,7,8,90,21,34,445,56};
+		int[] test = {11,2,4,5,5,6,7,8,90,21,34,445,56};
 
 		printArray(test);
 		int[] res = partition(test, 0, test.length - 1, 5);
