@@ -166,11 +166,11 @@ public class Code_06_BFPRT {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 16,19,1,2,3,4,5,6,7,8,23};
+		int[] arr = { 1,2,3,4,5,6};
 		// sorted : { 1, 1, 1, 1, 2, 2, 2, 3, 3, 5, 5, 5, 6, 6, 6, 7, 9, 9, 9 }
-		printArray(getMinKNumsByHeap(arr, 8));
-		printArray(getMinKNumsByBFPRT(arr, 8));
-		
+		printArray(getMinKNumsByHeap(arr, 3));
+		printArray(getMinKNumsByBFPRT(arr, 3));
+
 	}
 
 }

@@ -11,7 +11,7 @@ public class Code_03_HeapSort {
 		for (int i = 0; i < arr.length; i++) {
 			heapInsert(arr, i);
 		}
-		int size = arr.length;
+		int size = arr.length;//heapsize等于数组全部
 		swap(arr, 0, --size);
 		while (size > 0) {
 			heapify(arr, 0, size);
@@ -126,7 +126,7 @@ public class Code_03_HeapSort {
 		for (int i = 0; i < arr.length; i++) {
 			heapInsert(arr, i);
 		}
-//		heapSort(arr);
+		heapSort(arr);
 		printArray(arr);
 	}
 

@@ -10,6 +10,7 @@
       <link>http://www.eclipse.org</link>
     </image>
     <item>
+<<<<<<< HEAD
       <title><![CDATA[We Are Open]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/thabang-mashologu/we-are-open]]></link>
       <description><![CDATA[We Are Open campaign provides a peek into Eclipse community's openness, innovation, and collaboration.]]></description>
@@ -74,6 +75,8 @@
       <pressrelease>0</pressrelease>
     </item>
     <item>
+=======
+>>>>>>> 09c331e1c6fbfb4c68f4b8179de9863406a8bd59
       <title><![CDATA[Take Your Code to the Next Level With Eclipse Photon]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/thabang-mashologu/take-your-code-next-level-eclipse-photon]]></link>
       <description><![CDATA[Join over 4 million active users of the Eclipse IDE and take your coding to the next level with Eclipse Photon.]]></description>

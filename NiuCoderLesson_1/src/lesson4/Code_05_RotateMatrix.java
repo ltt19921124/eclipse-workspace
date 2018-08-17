@@ -3,12 +3,12 @@ package lesson4;
 public class Code_05_RotateMatrix {
 
 	public static void rotate(int[][] matrix) {
-		int tR = 0;
-		int tC = 0;
-		int dR = matrix.length - 1;
-		int dC = matrix[0].length - 1;
-		while (tR < dR) {
-			rotateEdge(matrix, tR++, tC++, dR--, dC--);
+		int aR = 0;
+		int aC = 0;
+		int bR = matrix.length - 1;
+		int bC = matrix[0].length - 1;
+		while (aR < bR) {
+			rotateEdge(matrix, aR++, aC++, bR--, bC--);
 		}
 	}
 	
@@ -34,8 +34,8 @@ public class Code_05_RotateMatrix {
 	}
 
 	public static void main(String[] args) {
-		int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 },
-				{ 13, 14, 15, 16 } };
+		int[][] matrix = { { 1, 2, 3, 4,4 }, { 5, 6, 7,8, 8 }, { 9, 10, 11, 12,12 },
+				{ 13, 14, 15, 16 ,16},{17,18,19,20,21} };
 		printMatrix(matrix);
 		rotate(matrix);
 		System.out.println("=========");

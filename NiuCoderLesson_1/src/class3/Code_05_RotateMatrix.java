@@ -38,7 +38,7 @@ public class Code_05_RotateMatrix {
 				{ 13, 14, 15, 16 } };
 		printMatrix(matrix);
 		rotate(matrix);
-		System.out.println("=========");
+		System.out.println("===========");
 		printMatrix(matrix);
 
 	}

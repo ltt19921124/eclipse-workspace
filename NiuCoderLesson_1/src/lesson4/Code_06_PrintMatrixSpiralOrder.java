@@ -15,7 +15,7 @@ public class Code_06_PrintMatrixSpiralOrder {
 	public static void printEdge(int[][] m, int tR, int tC, int dR, int dC) {
 		if (tR == dR) {
 			for (int i = tC; i <= dC; i++) {
-				System.out.print(m[tR][i] + " ");
+				System.out.println(m[tR][i] + " ");
 			}
 		} else if (tC == dC) {
 			for (int i = tR; i <= dR; i++) {

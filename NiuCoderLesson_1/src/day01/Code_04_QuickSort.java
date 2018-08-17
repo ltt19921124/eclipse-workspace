@@ -10,7 +10,7 @@ public class Code_04_QuickSort {
 		}
 		quickSort(arr, 0, arr.length - 1);
 	}
-
+	
 	public static void quickSort(int[] arr, int L, int R) {
 		if (L < R) {
 			swap(arr, L + (int) (Math.random() * (R - L + 1)), R);
@@ -32,7 +32,7 @@ public class Code_04_QuickSort {
 				L++;
 			}
 		}
-		swap(arr, more, R);
+		swap(arr, more, R);//
 		return new int[] { less + 1, more };
 	}
 

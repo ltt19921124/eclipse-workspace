@@ -10,6 +10,7 @@ public class Code_02_RandomPool {
 		private int size;
 
 		public Pool() {
+			
 			this.keyIndexMap = new HashMap<K, Integer>();
 			this.indexKeyMap = new HashMap<Integer, K>();
 			this.size = 0;
@@ -21,7 +22,7 @@ public class Code_02_RandomPool {
 				this.indexKeyMap.put(this.size++, key);
 			}
 		}
-
+		
 		public void delete(K key) {
 			if (this.keyIndexMap.containsKey(key)) {
 				int deleteIndex = this.keyIndexMap.get(key);
@@ -64,7 +65,7 @@ public class Code_02_RandomPool {
 		
 		hs.get(1);
 
-
+		
 	}
 
 }
